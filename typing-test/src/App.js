@@ -19,7 +19,7 @@ function App() {
     <div className={`app-container ${darkMode ? "dark" : ""}`}>
       <div className="header">
         <button className="dark-toggle" onClick={toggleDarkMode}>
-          {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
+          {darkMode ? "Light Mode" : "Dark Mode"}
         </button>
       </div>
       
@@ -42,7 +42,9 @@ function App() {
         <TypingTest mode={mode} onModeChange={setMode} />
       )}
     </div>
+    
   );
 }
+
 
 export default App;

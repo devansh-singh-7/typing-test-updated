@@ -64,7 +64,7 @@ function TypingTest({ mode, onModeChange }) {
     const value = e.target.value;
     if (!startTime) setStartTime(Date.now());
 
-    let newMistakes = mistakes;
+    let newMistakes = 0;
     const minLen = Math.min(value.length, sentence.length);
 
     for (let i = 0; i < minLen; i++) {
@@ -80,7 +80,7 @@ function TypingTest({ mode, onModeChange }) {
     setMistakes(newMistakes);
     setInput(value);
 
-    if (value === sentence) {
+    if (value.length === sentence.length) {
       const timeTaken = (Date.now() - startTime) / 1000;
       const words = sentence.trim().split(" ").length;
       const calculatedWpm = Math.round((words / timeTaken) * 60);
@@ -223,6 +223,10 @@ function TypingTest({ mode, onModeChange }) {
             </div>
           </div>
         )}
+        
+      </div>
+      <div className="footer-section">
+            <p>© {new Date().getFullYear()} Typing Test App</p>
       </div>
     </div>
   );
