@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Typing Test",
+  "name": "Typing Speed Test - Improve Your Typing Skills",
+  "description": "Test your typing speed and accuracy with our interactive typing test application",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +21,9 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#007bff",
+  "background_color": "#ffffff",
+  "categories": ["education", "productivity", "utilities"],
+  "lang": "en",
+  "orientation": "portrait-primary"
 }
